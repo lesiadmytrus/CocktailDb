@@ -10,6 +10,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * Install dependencies `npm install`
 
+`The filtering doesn't work for multiple checkboxes, only for one checkbox`
+
 
 ## Development server
 
