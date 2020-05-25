@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
+## Setup
+
+* Clone the repository `git clone https://github.com/lesiadmytrus/CocktailDb.git`
+
+* Switch to the repo folder `cd cocktail-db`
+
+* Install dependencies `npm install`
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
