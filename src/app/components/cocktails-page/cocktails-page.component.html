@@ -1,0 +1,26 @@
+<div class="title-container shadow bg-white rounded">
+  <p class="title">
+    Cocktail DB
+    <span>
+      <img src="assets/cocktail-label/Vector.png" alt="" class="vector">
+    </span>
+  </p>
+</div>
+
+<div class="menu-container d-flex justify-content-between">
+  <form [formGroup]="form" (ngSubmit)="filterByType()" class="d-flex flex-column bd-highlight form-check">
+    <label formArrayName="drinks" *ngFor="let category of categories; let i = index" class="bd-highlight">
+      <input type="checkbox" [formControlName]="i" class="check-box">
+      {{category.strCategory}}
+    </label>
+
+    <button class="btn btn-dark btn-sm">Apply</button>
+  </form>
+
+  <div class="item-container">
+    <div class="item" *ngFor="let cocktail of cocktails">
+      <img src="{{cocktail.strDrinkThumb}}" alt="">
+      <p>{{cocktail.strDrink}}</p>
+    </div>
+  </div>
+</div>
